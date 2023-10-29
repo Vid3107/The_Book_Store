@@ -21,10 +21,5 @@ namespace Book_Storee.Forms.Auth
         {
             Close();
         }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

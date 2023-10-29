@@ -35,3 +35,5 @@ D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.pdb
 >>>>>>> vid-dev
 D:\University\faculty of IT\Year 4\OOAD\Final Project\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.formAdmin.resources
 D:\University\faculty of IT\Year 4\OOAD\Final Project\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.Forms.AdminForm.formPushlisherList.resources
+D:\University\faculty of IT\Year 4\OOAD\Final Project\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.Forms.ChasierForm.formCashier.resources
+D:\University\faculty of IT\Year 4\OOAD\Final Project\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.Forms.Auth.FormLogin.resources

@@ -1,4 +1,6 @@
 ﻿using Book_Storee;
+using Book_Storee.Forms.Auth;
+using Book_Storee.Forms.ChasierForm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +19,7 @@ namespace The_Book_Store
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formAdmin());
+            Application.Run(new formCashier());
         }
     }
 }

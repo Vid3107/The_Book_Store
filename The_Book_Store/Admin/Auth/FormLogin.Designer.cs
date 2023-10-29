@@ -54,6 +54,8 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::Book_Storee.Properties.Resources.close;
+            this.pictureBox2.InitialImage = global::Book_Storee.Properties.Resources.close;
             this.pictureBox2.Location = new System.Drawing.Point(428, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(38, 34);
@@ -64,6 +66,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = global::Book_Storee.Properties.Resources.data_protection;
             this.pictureBox1.Location = new System.Drawing.Point(194, 61);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(82, 85);
@@ -91,6 +94,7 @@
             this.textPassword.CustomButton.Visible = false;
             this.textPassword.DisplayIcon = true;
             this.textPassword.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.textPassword.Icon = global::Book_Storee.Properties.Resources.password1;
             this.textPassword.Lines = new string[0];
             this.textPassword.Location = new System.Drawing.Point(71, 233);
             this.textPassword.MaxLength = 32767;
@@ -130,6 +134,7 @@
             this.textUsername.CustomButton.Visible = false;
             this.textUsername.DisplayIcon = true;
             this.textUsername.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.textUsername.Icon = global::Book_Storee.Properties.Resources.user;
             this.textUsername.Lines = new string[0];
             this.textUsername.Location = new System.Drawing.Point(71, 162);
             this.textUsername.MaxLength = 32767;
@@ -163,7 +168,6 @@
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

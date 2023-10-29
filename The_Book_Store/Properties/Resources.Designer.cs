@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Drawing;
+
 namespace The_Book_Store.Properties
 {
 
@@ -24,7 +26,10 @@ namespace The_Book_Store.Properties
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources
     {
-
+        internal static Image close;
+        internal static Image data_protection;
+        internal static Image password1;
+        internal static Image user;
         private static global::System.Resources.ResourceManager resourceMan;
 
         private static global::System.Globalization.CultureInfo resourceCulture;

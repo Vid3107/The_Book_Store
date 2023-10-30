@@ -46,5 +46,10 @@ namespace Book_Storee.Forms.ChasierForm
         {
 
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

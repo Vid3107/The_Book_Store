@@ -37,3 +37,22 @@ D:\University\faculty of IT\Year 4\OOAD\Final Project\The_Book_Store\The_Book_St
 D:\University\faculty of IT\Year 4\OOAD\Final Project\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.Forms.AdminForm.formPushlisherList.resources
 D:\University\faculty of IT\Year 4\OOAD\Final Project\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.Forms.ChasierForm.formCashier.resources
 D:\University\faculty of IT\Year 4\OOAD\Final Project\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.Forms.Auth.FormLogin.resources
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\The_Book_Store.exe.config
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\The_Book_Store.exe
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\The_Book_Store.pdb
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\Krypton.Toolkit.dll
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\MetroFramework.Design.dll
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\MetroFramework.dll
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\MetroFramework.Fonts.dll
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\Krypton.Toolkit.xml
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.csproj.AssemblyReference.cache
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.formAdmin.resources
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.Forms.AdminForm.formPushlisherList.resources
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.Forms.Auth.FormLogin.resources
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.Forms.ChasierForm.formCashier.resources
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Properties.Resources.resources
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.csproj.GenerateResource.cache
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.csproj.CoreCompileInputs.cache
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.csproj.CopyComplete
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.exe
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.pdb

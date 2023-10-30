@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formCashier));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_close = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btn_transaction = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cahsier_image = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -51,19 +50,20 @@
             this.order_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDelete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cahsier_image)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Controls.Add(this.btn_close);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.btn_transaction);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(834, 0);
             this.panel1.Name = "panel1";
@@ -81,7 +81,7 @@
             this.btn_close.ForeColor = System.Drawing.Color.White;
             this.btn_close.Image = ((System.Drawing.Image)(resources.GetObject("btn_close.Image")));
             this.btn_close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_close.Location = new System.Drawing.Point(0, 110);
+            this.btn_close.Location = new System.Drawing.Point(0, 55);
             this.btn_close.Margin = new System.Windows.Forms.Padding(4);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(365, 55);
@@ -100,7 +100,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 55);
+            this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(365, 55);
@@ -108,25 +108,6 @@
             this.button2.Text = "New Transaction";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btn_transaction
-            // 
-            this.btn_transaction.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_transaction.FlatAppearance.BorderSize = 0;
-            this.btn_transaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_transaction.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_transaction.ForeColor = System.Drawing.Color.White;
-            this.btn_transaction.Image = ((System.Drawing.Image)(resources.GetObject("btn_transaction.Image")));
-            this.btn_transaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_transaction.Location = new System.Drawing.Point(0, 0);
-            this.btn_transaction.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_transaction.Name = "btn_transaction";
-            this.btn_transaction.Size = new System.Drawing.Size(365, 55);
-            this.btn_transaction.TabIndex = 4;
-            this.btn_transaction.Text = "New Transaction";
-            this.btn_transaction.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_transaction.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_transaction.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -166,7 +147,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label);
             this.panel2.Controls.Add(this.label_transactionNo);
@@ -174,7 +155,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 72);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(834, 83);
+            this.panel2.Size = new System.Drawing.Size(834, 80);
             this.panel2.TabIndex = 4;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -221,14 +202,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -239,12 +220,14 @@
             this.order_price,
             this.order_total,
             this.ColumnDelete});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 154);
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(834, 484);
+            this.dataGridView1.Size = new System.Drawing.Size(834, 410);
             this.dataGridView1.TabIndex = 4;
             // 
             // ColumnNumber
@@ -310,6 +293,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(834, 183);
             this.panel4.TabIndex = 5;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.dataGridView1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 152);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(834, 410);
+            this.panel5.TabIndex = 6;
             // 
             // formCashier
             // 
@@ -318,14 +311,13 @@
             this.CancelButton = this.btn_close;
             this.ClientSize = new System.Drawing.Size(1199, 779);
             this.ControlBox = false;
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "formCashier";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = " ";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.formCashier_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cahsier_image)).EndInit();
@@ -334,6 +326,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -341,7 +334,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_transaction;
         private System.Windows.Forms.PictureBox cahsier_image;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
@@ -358,8 +350,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn order_total;
         private System.Windows.Forms.DataGridViewImageColumn ColumnDelete;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }

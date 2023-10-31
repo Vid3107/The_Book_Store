@@ -1,0 +1,16 @@
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\bin\Debug\The_Book_Store.exe.config
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\bin\Debug\The_Book_Store.exe
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\bin\Debug\The_Book_Store.pdb
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\bin\Debug\Krypton.Toolkit.dll
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\bin\Debug\MetroFramework.Design.dll
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\bin\Debug\MetroFramework.dll
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\bin\Debug\MetroFramework.Fonts.dll
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\bin\Debug\Krypton.Toolkit.xml
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.csproj.AssemblyReference.cache
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.csproj.SuggestedBindingRedirects.cache
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Properties.Resources.resources
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.csproj.GenerateResource.cache
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.csproj.CoreCompileInputs.cache
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.csproj.CopyComplete
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.exe
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.pdb

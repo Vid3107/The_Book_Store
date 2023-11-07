@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using The_Book_Store.Admin;
 
 namespace Book_Storee
 {
@@ -25,6 +26,18 @@ namespace Book_Storee
             panelAdmin.Controls.Add(formPushlisherList);
             formPushlisherList.BringToFront();
             formPushlisherList.Show();
+        }
+
+        private void BtnManageBook_Click(object sender, EventArgs e)
+        {
+            FormManageBook formManageBook = new FormManageBook();
+            formManageBook.Show();
+        }
+
+        private void BtnManageGenre_Click(object sender, EventArgs e)
+        {
+            FormManageBook formManageBook = new FormManageBook();
+            formManageBook.Show();
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using The_Book_Store.Admin;
 
 namespace The_Book_Store
 {
@@ -17,7 +18,7 @@ namespace The_Book_Store
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formAdmin());
+            Application.Run(new FormAdminNew());
         }
     }
 }

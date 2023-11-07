@@ -59,17 +59,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\FormActivateDeactivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormActivateDeactivate.Designer.cs">
+      <DependentUpon>FormActivateDeactivate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\formAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\formAdmin.designer.cs">
       <DependentUpon>formAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\FormAdminNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormAdminNew.Designer.cs">
+      <DependentUpon>FormAdminNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormChangePassword.Designer.cs">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormCreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormCreateAccount.Designer.cs">
+      <DependentUpon>FormCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormGenreList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGenreList.Designer.cs">
+      <DependentUpon>FormGenreList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormManageBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormManageBook.Designer.cs">
+      <DependentUpon>FormManageBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormManagePublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormManagePublisher.Designer.cs">
+      <DependentUpon>FormManagePublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormProductList.Designer.cs">
+      <DependentUpon>FormProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormProductModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormProductModule.Designer.cs">
+      <DependentUpon>FormProductModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\formPushlisherList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\formPushlisherList.designer.cs">
       <DependentUpon>formPushlisherList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormSaleHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormSaleHistory.Designer.cs">
+      <DependentUpon>FormSaleHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormStockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormStockIn.Designer.cs">
+      <DependentUpon>FormStockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormUserSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormUserSettings.Designer.cs">
+      <DependentUpon>FormUserSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -79,11 +151,47 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\FormActivateDeactivate.resx">
+      <DependentUpon>FormActivateDeactivate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\formAdmin.resx">
       <DependentUpon>formAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormAdminNew.resx">
+      <DependentUpon>FormAdminNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormChangePassword.resx">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormCreateAccount.resx">
+      <DependentUpon>FormCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormGenreList.resx">
+      <DependentUpon>FormGenreList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormManageBook.resx">
+      <DependentUpon>FormManageBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormManagePublisher.resx">
+      <DependentUpon>FormManagePublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormProductList.resx">
+      <DependentUpon>FormProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormProductModule.resx">
+      <DependentUpon>FormProductModule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\formPushlisherList.resx">
       <DependentUpon>formPushlisherList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormSaleHistory.resx">
+      <DependentUpon>FormSaleHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormStockIn.resx">
+      <DependentUpon>FormStockIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormUserSettings.resx">
+      <DependentUpon>FormUserSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,6 +217,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\Icons\" />
     <Folder Include="Cashier\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

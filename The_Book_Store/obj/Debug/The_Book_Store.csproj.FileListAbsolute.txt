@@ -15,3 +15,15 @@ D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\Book_Storee.Forms.Adm
 D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.csproj.CopyComplete
 D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.exe
 D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.pdb
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormProductModule.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormStockIn.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormSaleHistory.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormManageBook.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormProductList.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormAdminNew.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormGenreList.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormManagePublisher.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormUserSettings.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormCreateAccount.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormChangePassword.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormActivateDeactivate.resources

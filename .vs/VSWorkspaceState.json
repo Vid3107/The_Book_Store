@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\The_Book_Store",
-    "\\The_Book_Store\\Admin"
+    "\\The_Book_Store\\Admin",
+    "\\The_Book_Store\\Cashier"
   ],
-  "SelectedNode": "\\The_Book_Store\\Admin\\formAdmin.cs",
   "PreviewInSolutionExplorer": false
 }

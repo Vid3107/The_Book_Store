@@ -15,6 +15,7 @@ namespace Book_Storee.Forms.ChasierForm
         public formCashier()
         {
             InitializeComponent();
+            lblDate.Text = DateTime.Now.ToLongDateString();
         }
 
         private void label4_Click(object sender, EventArgs e)

@@ -45,6 +45,10 @@
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=8.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector NET 8.2.0\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -59,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\DBConnection.cs" />
     <Compile Include="Admin\FormActivateDeactivate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +100,12 @@
     <Compile Include="Admin\FormGenreList.Designer.cs">
       <DependentUpon>FormGenreList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\FormGenreModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGenreModule.Designer.cs">
+      <DependentUpon>FormGenreModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\FormManageBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +129,12 @@
     </Compile>
     <Compile Include="Admin\FormProductModule.Designer.cs">
       <DependentUpon>FormProductModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormPublisherModule2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormPublisherModule2.Designer.cs">
+      <DependentUpon>FormPublisherModule2.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\formPushlisherList.cs">
       <SubType>Form</SubType>
@@ -169,6 +186,9 @@
     <EmbeddedResource Include="Admin\FormGenreList.resx">
       <DependentUpon>FormGenreList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormGenreModule.resx">
+      <DependentUpon>FormGenreModule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormManageBook.resx">
       <DependentUpon>FormManageBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormProductModule.resx">
       <DependentUpon>FormProductModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormPublisherModule2.resx">
+      <DependentUpon>FormPublisherModule2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\formPushlisherList.resx">
       <DependentUpon>formPushlisherList.cs</DependentUpon>

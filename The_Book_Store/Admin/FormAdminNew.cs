@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,9 +14,28 @@ namespace The_Book_Store.Admin
 {
     public partial class FormAdminNew : Form
     {
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cm = new SqlCommand();
+        DBConnection dbcon = new DBConnection();
         public FormAdminNew()
         {
             InitializeComponent();
+            cn = new SqlConnection(dbcon.MyConnection());
+            cn.Open();
+            using (cn = new SqlConnection(dbcon.MyConnection()))
+            {
+                try
+                {
+                    cn.Open();
+                    MessageBox.Show("Connected");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+            }
+            
         }
 
         private void BtnBooks_Click(object sender, EventArgs e)
@@ -27,6 +48,7 @@ namespace The_Book_Store.Admin
             this.Hide();
             FormManageBook formManageBook = new FormManageBook();
             formManageBook.FormClosed += (s, args) => this.Show();
+            formManageBook.LoadRecords();
             formManageBook.Show();
             
         }

@@ -15,3 +15,4 @@ D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\
 D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.pdb
 D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Form1.resources
 D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Cashier.lookupForm.Search.resources
+D:\IT-SLS-Y4\OOAD\Assignment\Form Books\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Cashier.Popup.Popup.resources

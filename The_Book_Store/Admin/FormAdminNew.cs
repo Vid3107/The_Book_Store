@@ -97,5 +97,17 @@ namespace The_Book_Store.Admin
         {
             throw new NotImplementedException();
         }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            FormSecurity formSecurity = new FormSecurity();
+            formSecurity.Show();
+        }
+
+        private void FormAdminNew_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

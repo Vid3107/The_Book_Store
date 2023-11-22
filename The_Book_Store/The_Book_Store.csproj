@@ -82,6 +82,18 @@
     <Compile Include="Admin\FormAdminNew.Designer.cs">
       <DependentUpon>FormAdminNew.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\FormBrowseProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormBrowseProduct.Designer.cs">
+      <DependentUpon>FormBrowseProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormCashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormCashier.designer.cs">
+      <DependentUpon>FormCashier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\FormChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +117,12 @@
     </Compile>
     <Compile Include="Admin\FormGenreModule.Designer.cs">
       <DependentUpon>FormGenreModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormInputQtyForBrowseProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormInputQtyForBrowseProduct.Designer.cs">
+      <DependentUpon>FormInputQtyForBrowseProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\FormManageBook.cs">
       <SubType>Form</SubType>
@@ -148,12 +166,6 @@
     <Compile Include="Admin\FormSaleHistory.Designer.cs">
       <DependentUpon>FormSaleHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\FormStockIn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\FormStockIn.Designer.cs">
-      <DependentUpon>FormStockIn.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin\FormUserSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +178,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecurity.designer.cs">
+      <DependentUpon>FormSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormStockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormStockIn.designer.cs">
+      <DependentUpon>FormStockIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Admin\FormActivateDeactivate.resx">
@@ -176,6 +200,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormAdminNew.resx">
       <DependentUpon>FormAdminNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormBrowseProduct.resx">
+      <DependentUpon>FormBrowseProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormCashier.resx">
+      <DependentUpon>FormCashier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormChangePassword.resx">
       <DependentUpon>FormChangePassword.cs</DependentUpon>
@@ -188,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormGenreModule.resx">
       <DependentUpon>FormGenreModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormInputQtyForBrowseProduct.resx">
+      <DependentUpon>FormInputQtyForBrowseProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormManageBook.resx">
       <DependentUpon>FormManageBook.cs</DependentUpon>
@@ -210,11 +243,14 @@
     <EmbeddedResource Include="Admin\FormSaleHistory.resx">
       <DependentUpon>FormSaleHistory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\FormStockIn.resx">
-      <DependentUpon>FormStockIn.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormUserSettings.resx">
       <DependentUpon>FormUserSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecurity.resx">
+      <DependentUpon>FormSecurity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormStockIn.resx">
+      <DependentUpon>FormStockIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

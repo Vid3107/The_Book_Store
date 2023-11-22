@@ -35,3 +35,7 @@ D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\bin\Debug\System.Threading.Task
 D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\bin\Debug\System.Numerics.Vectors.dll
 D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\bin\Debug\System.Buffers.dll
 D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\bin\Debug\MySql.Data.xml
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.FormCashier.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.FormSecurity.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormBrowseProduct.resources
+D:\RUPP\Y4 S1\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Admin.FormInputQtyForBrowseProduct.resources

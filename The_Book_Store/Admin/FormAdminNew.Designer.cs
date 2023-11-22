@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.BtnLogout = new System.Windows.Forms.Button();
             this.BtnSaleHistory = new System.Windows.Forms.Button();
             this.BtnStockEntry = new System.Windows.Forms.Button();
             this.BtnManageUser = new System.Windows.Forms.Button();
@@ -75,22 +75,23 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // button7
+            // BtnLogout
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(442, 348);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(287, 45);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "        Logout";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.BtnLogout.FlatAppearance.BorderSize = 0;
+            this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogout.ForeColor = System.Drawing.Color.White;
+            this.BtnLogout.Image = ((System.Drawing.Image)(resources.GetObject("BtnLogout.Image")));
+            this.BtnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLogout.Location = new System.Drawing.Point(442, 348);
+            this.BtnLogout.Name = "BtnLogout";
+            this.BtnLogout.Size = new System.Drawing.Size(287, 45);
+            this.BtnLogout.TabIndex = 5;
+            this.BtnLogout.Text = "        Logout";
+            this.BtnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnLogout.UseVisualStyleBackColor = true;
+            this.BtnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
             // 
             // BtnSaleHistory
             // 
@@ -206,7 +207,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
             this.ClientSize = new System.Drawing.Size(779, 543);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.BtnLogout);
             this.Controls.Add(this.BtnSaleHistory);
             this.Controls.Add(this.BtnStockEntry);
             this.Controls.Add(this.BtnManageUser);
@@ -216,10 +217,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormAdminNew";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAdminNew";
+            this.Load += new System.EventHandler(this.FormAdminNew_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -231,7 +234,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button BtnLogout;
         private System.Windows.Forms.Button BtnSaleHistory;
         private System.Windows.Forms.Button BtnStockEntry;
         private System.Windows.Forms.Button BtnManageUser;

@@ -64,25 +64,32 @@
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1091, 639);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ColumnNumber
             // 
             this.ColumnNumber.HeaderText = "#";
+            this.ColumnNumber.MinimumWidth = 6;
             this.ColumnNumber.Name = "ColumnNumber";
+            this.ColumnNumber.Width = 125;
             // 
             // ColumnID
             // 
             this.ColumnID.HeaderText = "ID";
+            this.ColumnID.MinimumWidth = 6;
             this.ColumnID.Name = "ColumnID";
             this.ColumnID.Visible = false;
+            this.ColumnID.Width = 125;
             // 
             // ColumnBrand
             // 
             this.ColumnBrand.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ColumnBrand.HeaderText = "Publisher";
+            this.ColumnBrand.MinimumWidth = 6;
             this.ColumnBrand.Name = "ColumnBrand";
             // 
             // ColumnEdit
@@ -90,20 +97,22 @@
             this.ColumnEdit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ColumnEdit.HeaderText = "";
             this.ColumnEdit.Image = ((System.Drawing.Image)(resources.GetObject("ColumnEdit.Image")));
+            this.ColumnEdit.MinimumWidth = 6;
             this.ColumnEdit.Name = "ColumnEdit";
-            this.ColumnEdit.Width = 5;
+            this.ColumnEdit.Width = 6;
             // 
             // ColumnDelete
             // 
             this.ColumnDelete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ColumnDelete.HeaderText = "";
             this.ColumnDelete.Image = ((System.Drawing.Image)(resources.GetObject("ColumnDelete.Image")));
+            this.ColumnDelete.MinimumWidth = 6;
             this.ColumnDelete.Name = "ColumnDelete";
-            this.ColumnDelete.Width = 5;
+            this.ColumnDelete.Width = 6;
             // 
             // formPushlisherList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 639);
             this.Controls.Add(this.dataGridView1);

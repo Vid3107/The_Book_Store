@@ -61,8 +61,9 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(287, 861);
+            this.panel1.Size = new System.Drawing.Size(383, 1055);
             this.panel1.TabIndex = 0;
             // 
             // button6
@@ -73,9 +74,10 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(11, 555);
+            this.button6.Location = new System.Drawing.Point(15, 683);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(287, 45);
+            this.button6.Size = new System.Drawing.Size(383, 55);
             this.button6.TabIndex = 2;
             this.button6.Text = "        Logout";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -90,9 +92,10 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(11, 504);
+            this.button5.Location = new System.Drawing.Point(15, 620);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(287, 45);
+            this.button5.Size = new System.Drawing.Size(383, 55);
             this.button5.TabIndex = 2;
             this.button5.Text = "        User Settings";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -107,9 +110,10 @@
             this.btnBrand.ForeColor = System.Drawing.Color.White;
             this.btnBrand.Image = ((System.Drawing.Image)(resources.GetObject("btnBrand.Image")));
             this.btnBrand.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBrand.Location = new System.Drawing.Point(11, 453);
+            this.btnBrand.Location = new System.Drawing.Point(15, 558);
+            this.btnBrand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBrand.Name = "btnBrand";
-            this.btnBrand.Size = new System.Drawing.Size(287, 45);
+            this.btnBrand.Size = new System.Drawing.Size(383, 55);
             this.btnBrand.TabIndex = 2;
             this.btnBrand.Text = "        Manage Brand";
             this.btnBrand.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -125,9 +129,10 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(11, 402);
+            this.button3.Location = new System.Drawing.Point(15, 495);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(287, 45);
+            this.button3.Size = new System.Drawing.Size(383, 55);
             this.button3.TabIndex = 2;
             this.button3.Text = "        Manage Category";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -142,9 +147,10 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(11, 351);
+            this.button2.Location = new System.Drawing.Point(15, 432);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(287, 45);
+            this.button2.Size = new System.Drawing.Size(383, 55);
             this.button2.TabIndex = 2;
             this.button2.Text = "        Manage Product";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -159,9 +165,10 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(11, 300);
+            this.button1.Location = new System.Drawing.Point(15, 369);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(287, 45);
+            this.button1.Size = new System.Drawing.Size(383, 55);
             this.button1.TabIndex = 2;
             this.button1.Text = "        Manage Sale";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -173,9 +180,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(74, 213);
+            this.label2.Location = new System.Drawing.Point(99, 262);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 20);
+            this.label2.Size = new System.Drawing.Size(139, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Administrator";
             // 
@@ -184,9 +192,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Lavender;
-            this.label1.Location = new System.Drawing.Point(84, 176);
+            this.label1.Location = new System.Drawing.Point(112, 217);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 20);
+            this.label1.Size = new System.Drawing.Size(110, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Username";
             // 
@@ -194,9 +203,10 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(76, 59);
+            this.pictureBox1.Location = new System.Drawing.Point(101, 73);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(132, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -206,18 +216,20 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(287, 0);
+            this.panel2.Location = new System.Drawing.Point(383, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(955, 100);
+            this.panel2.Size = new System.Drawing.Size(1273, 123);
             this.panel2.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(121, 35);
+            this.label3.Location = new System.Drawing.Point(161, 43);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(784, 31);
+            this.label3.Size = new System.Drawing.Size(974, 39);
             this.label3.TabIndex = 0;
             this.label3.Text = "Welcome to Book Storee Point of Sale System Admin Panel";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,22 +238,25 @@
             // 
             this.panelAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelAdmin.Location = new System.Drawing.Point(287, 100);
+            this.panelAdmin.Location = new System.Drawing.Point(383, 123);
+            this.panelAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelAdmin.Name = "panelAdmin";
-            this.panelAdmin.Size = new System.Drawing.Size(955, 761);
+            this.panelAdmin.Size = new System.Drawing.Size(1273, 932);
             this.panelAdmin.TabIndex = 2;
             // 
             // formAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1242, 861);
+            this.ClientSize = new System.Drawing.Size(1656, 1055);
             this.Controls.Add(this.panelAdmin);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "formAdmin";
             this.Text = "Admin";
+            this.Load += new System.EventHandler(this.formAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

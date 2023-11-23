@@ -20,5 +20,10 @@ namespace Book_Storee.Forms.AdminForm
                 dataGridView1.Rows.Add(i, "1", "Brand" + i);
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

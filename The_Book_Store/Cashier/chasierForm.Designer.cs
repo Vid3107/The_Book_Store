@@ -29,12 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formCashier));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.btn_transaction = new System.Windows.Forms.Button();
             this.lblRole = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.cahsier_image = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -50,6 +55,7 @@
             this.order_qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.order_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.order_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -60,19 +66,13 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.cahsier_image = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn_search = new System.Windows.Forms.Button();
-            this.btn_transaction = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cahsier_image)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cahsier_image)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -88,6 +88,86 @@
             this.panel1.Size = new System.Drawing.Size(276, 779);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::The_Book_Store.Properties.Resources.exit;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 216);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(276, 72);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Log out";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::The_Book_Store.Properties.Resources.wallet;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 144);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(276, 72);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Settle Payment";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // btn_search
+            // 
+            this.btn_search.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_search.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_search.FlatAppearance.BorderSize = 0;
+            this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.ForeColor = System.Drawing.Color.White;
+            this.btn_search.Image = global::The_Book_Store.Properties.Resources.search1;
+            this.btn_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_search.Location = new System.Drawing.Point(0, 72);
+            this.btn_search.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(276, 72);
+            this.btn_search.TabIndex = 14;
+            this.btn_search.Text = "Search Product";
+            this.btn_search.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_search.UseVisualStyleBackColor = false;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            // 
+            // btn_transaction
+            // 
+            this.btn_transaction.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_transaction.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_transaction.FlatAppearance.BorderSize = 0;
+            this.btn_transaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_transaction.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_transaction.ForeColor = System.Drawing.Color.White;
+            this.btn_transaction.Image = ((System.Drawing.Image)(resources.GetObject("btn_transaction.Image")));
+            this.btn_transaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_transaction.Location = new System.Drawing.Point(0, 0);
+            this.btn_transaction.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_transaction.Name = "btn_transaction";
+            this.btn_transaction.Size = new System.Drawing.Size(276, 72);
+            this.btn_transaction.TabIndex = 5;
+            this.btn_transaction.Text = "New Transaction";
+            this.btn_transaction.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_transaction.UseVisualStyleBackColor = false;
+            this.btn_transaction.Click += new System.EventHandler(this.btn_transaction_Click);
             // 
             // lblRole
             // 
@@ -126,6 +206,18 @@
             this.lblUsername.Size = new System.Drawing.Size(102, 25);
             this.lblUsername.TabIndex = 4;
             this.lblUsername.Text = "Username";
+            // 
+            // cahsier_image
+            // 
+            this.cahsier_image.Image = ((System.Drawing.Image)(resources.GetObject("cahsier_image.Image")));
+            this.cahsier_image.InitialImage = null;
+            this.cahsier_image.Location = new System.Drawing.Point(4, 4);
+            this.cahsier_image.Margin = new System.Windows.Forms.Padding(4);
+            this.cahsier_image.Name = "cahsier_image";
+            this.cahsier_image.Size = new System.Drawing.Size(63, 64);
+            this.cahsier_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cahsier_image.TabIndex = 2;
+            this.cahsier_image.TabStop = false;
             // 
             // panel2
             // 
@@ -208,14 +300,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -252,7 +344,7 @@
             this.ColumnID.MinimumWidth = 6;
             this.ColumnID.Name = "ColumnID";
             this.ColumnID.Visible = false;
-            this.ColumnID.Width = 54;
+            this.ColumnID.Width = 56;
             // 
             // Column1
             // 
@@ -292,6 +384,15 @@
             this.order_total.MinimumWidth = 6;
             this.order_total.Name = "order_total";
             this.order_total.Width = 78;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "";
+            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Width = 6;
             // 
             // panel6
             // 
@@ -389,107 +490,7 @@
             this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 6;
-            // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Delete.HeaderText = "";
-            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.Width = 6;
-            // 
-            // cahsier_image
-            // 
-            this.cahsier_image.Image = ((System.Drawing.Image)(resources.GetObject("cahsier_image.Image")));
-            this.cahsier_image.InitialImage = null;
-            this.cahsier_image.Location = new System.Drawing.Point(4, 4);
-            this.cahsier_image.Margin = new System.Windows.Forms.Padding(4);
-            this.cahsier_image.Name = "cahsier_image";
-            this.cahsier_image.Size = new System.Drawing.Size(63, 64);
-            this.cahsier_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cahsier_image.TabIndex = 2;
-            this.cahsier_image.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::The_Book_Store.Properties.Resources.exit;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 216);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(276, 72);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Log out";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::The_Book_Store.Properties.Resources.wallet;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 144);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(276, 72);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Settle Payment";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
-            // 
-            // btn_search
-            // 
-            this.btn_search.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_search.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_search.FlatAppearance.BorderSize = 0;
-            this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_search.ForeColor = System.Drawing.Color.White;
-            this.btn_search.Image = global::The_Book_Store.Properties.Resources.search1;
-            this.btn_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_search.Location = new System.Drawing.Point(0, 72);
-            this.btn_search.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(276, 72);
-            this.btn_search.TabIndex = 14;
-            this.btn_search.Text = "Search Product";
-            this.btn_search.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_search.UseVisualStyleBackColor = false;
-            // 
-            // btn_transaction
-            // 
-            this.btn_transaction.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_transaction.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_transaction.FlatAppearance.BorderSize = 0;
-            this.btn_transaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_transaction.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_transaction.ForeColor = System.Drawing.Color.White;
-            this.btn_transaction.Image = ((System.Drawing.Image)(resources.GetObject("btn_transaction.Image")));
-            this.btn_transaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_transaction.Location = new System.Drawing.Point(0, 0);
-            this.btn_transaction.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_transaction.Name = "btn_transaction";
-            this.btn_transaction.Size = new System.Drawing.Size(276, 72);
-            this.btn_transaction.TabIndex = 5;
-            this.btn_transaction.Text = "New Transaction";
-            this.btn_transaction.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_transaction.UseVisualStyleBackColor = false;
-            this.btn_transaction.Click += new System.EventHandler(this.btn_transaction_Click);
+            this.dataGridViewImageColumn1.Width = 125;
             // 
             // formCashier
             // 
@@ -507,13 +508,13 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cahsier_image)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cahsier_image)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using The_Book_Store;
 using The_Book_Store.Cashier;
 using Book_Storee.Forms.Auth;
+using The_Book_Store.Cashier.lookupForm;
 
 namespace Book_Storee.Forms.ChasierForm
 {
@@ -235,6 +236,12 @@ namespace Book_Storee.Forms.ChasierForm
             this.Hide();
             form.ShowDialog();
 
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            Search form = new Search();
+            form.ShowDialog();
         }
     }
 }

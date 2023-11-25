@@ -123,3 +123,6 @@ D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\
 D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Cashier.Popup.Popup.resources
 D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\obj\Debug\The_Book_Store.Cashier.lookupForm.Search.resources
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\Microsoft.AnalysisServices.AppLocal.dll
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\Microsoft.AnalysisServices.AppLocal.Tabular.dll
+D:\University\faculty of IT\Year 4\OOAD\The_Book_Store\The_Book_Store\bin\Debug\Microsoft.AnalysisServices.AppLocal.Core.dll

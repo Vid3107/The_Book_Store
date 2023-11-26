@@ -54,6 +54,7 @@
             this.BtnCancel.TabIndex = 13;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // BtnUpdate
             // 
@@ -110,7 +111,7 @@
             this.MaximizeBox = false;
             this.Name = "FormPublisherModule2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormPublisherModule2";
+            this.Text = "New/Update Publisher";
             this.Load += new System.EventHandler(this.FormPublisherModule2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

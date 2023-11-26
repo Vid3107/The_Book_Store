@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdminNew));
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnLogout = new System.Windows.Forms.Button();
             this.BtnSaleHistory = new System.Windows.Forms.Button();
@@ -47,28 +46,17 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(385, 113);
+            this.label2.Location = new System.Drawing.Point(455, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Administrator";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Lavender;
-            this.label1.Location = new System.Drawing.Point(385, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Username";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(280, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(459, 72);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(99, 99);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -79,11 +67,11 @@
             // 
             this.BtnLogout.FlatAppearance.BorderSize = 0;
             this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogout.ForeColor = System.Drawing.Color.White;
             this.BtnLogout.Image = ((System.Drawing.Image)(resources.GetObject("BtnLogout.Image")));
             this.BtnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnLogout.Location = new System.Drawing.Point(442, 348);
+            this.BtnLogout.Location = new System.Drawing.Point(647, 445);
             this.BtnLogout.Name = "BtnLogout";
             this.BtnLogout.Size = new System.Drawing.Size(287, 45);
             this.BtnLogout.TabIndex = 5;
@@ -97,11 +85,11 @@
             // 
             this.BtnSaleHistory.FlatAppearance.BorderSize = 0;
             this.BtnSaleHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSaleHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSaleHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSaleHistory.ForeColor = System.Drawing.Color.White;
             this.BtnSaleHistory.Image = ((System.Drawing.Image)(resources.GetObject("BtnSaleHistory.Image")));
             this.BtnSaleHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSaleHistory.Location = new System.Drawing.Point(442, 204);
+            this.BtnSaleHistory.Location = new System.Drawing.Point(647, 266);
             this.BtnSaleHistory.Name = "BtnSaleHistory";
             this.BtnSaleHistory.Size = new System.Drawing.Size(287, 45);
             this.BtnSaleHistory.TabIndex = 6;
@@ -115,11 +103,11 @@
             // 
             this.BtnStockEntry.FlatAppearance.BorderSize = 0;
             this.BtnStockEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnStockEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStockEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnStockEntry.ForeColor = System.Drawing.Color.White;
             this.BtnStockEntry.Image = ((System.Drawing.Image)(resources.GetObject("BtnStockEntry.Image")));
             this.BtnStockEntry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnStockEntry.Location = new System.Drawing.Point(75, 422);
+            this.BtnStockEntry.Location = new System.Drawing.Point(138, 538);
             this.BtnStockEntry.Name = "BtnStockEntry";
             this.BtnStockEntry.Size = new System.Drawing.Size(287, 45);
             this.BtnStockEntry.TabIndex = 7;
@@ -133,11 +121,11 @@
             // 
             this.BtnManageUser.FlatAppearance.BorderSize = 0;
             this.BtnManageUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnManageUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManageUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnManageUser.ForeColor = System.Drawing.Color.White;
             this.BtnManageUser.Image = ((System.Drawing.Image)(resources.GetObject("BtnManageUser.Image")));
             this.BtnManageUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnManageUser.Location = new System.Drawing.Point(442, 274);
+            this.BtnManageUser.Location = new System.Drawing.Point(647, 353);
             this.BtnManageUser.Name = "BtnManageUser";
             this.BtnManageUser.Size = new System.Drawing.Size(287, 45);
             this.BtnManageUser.TabIndex = 8;
@@ -151,13 +139,13 @@
             // 
             this.BtnManagePublisher.FlatAppearance.BorderSize = 0;
             this.BtnManagePublisher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnManagePublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManagePublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnManagePublisher.ForeColor = System.Drawing.Color.White;
             this.BtnManagePublisher.Image = ((System.Drawing.Image)(resources.GetObject("BtnManagePublisher.Image")));
             this.BtnManagePublisher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnManagePublisher.Location = new System.Drawing.Point(75, 348);
+            this.BtnManagePublisher.Location = new System.Drawing.Point(138, 445);
             this.BtnManagePublisher.Name = "BtnManagePublisher";
-            this.BtnManagePublisher.Size = new System.Drawing.Size(287, 45);
+            this.BtnManagePublisher.Size = new System.Drawing.Size(331, 45);
             this.BtnManagePublisher.TabIndex = 9;
             this.BtnManagePublisher.Text = "        Manage Publisher";
             this.BtnManagePublisher.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -169,11 +157,11 @@
             // 
             this.BtnManageGenre.FlatAppearance.BorderSize = 0;
             this.BtnManageGenre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnManageGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManageGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnManageGenre.ForeColor = System.Drawing.Color.White;
             this.BtnManageGenre.Image = ((System.Drawing.Image)(resources.GetObject("BtnManageGenre.Image")));
             this.BtnManageGenre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnManageGenre.Location = new System.Drawing.Point(75, 274);
+            this.BtnManageGenre.Location = new System.Drawing.Point(138, 353);
             this.BtnManageGenre.Name = "BtnManageGenre";
             this.BtnManageGenre.Size = new System.Drawing.Size(287, 45);
             this.BtnManageGenre.TabIndex = 10;
@@ -187,11 +175,11 @@
             // 
             this.BtnManageBook.FlatAppearance.BorderSize = 0;
             this.BtnManageBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnManageBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManageBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnManageBook.ForeColor = System.Drawing.Color.White;
             this.BtnManageBook.Image = ((System.Drawing.Image)(resources.GetObject("BtnManageBook.Image")));
             this.BtnManageBook.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnManageBook.Location = new System.Drawing.Point(75, 204);
+            this.BtnManageBook.Location = new System.Drawing.Point(138, 266);
             this.BtnManageBook.Name = "BtnManageBook";
             this.BtnManageBook.Size = new System.Drawing.Size(287, 45);
             this.BtnManageBook.TabIndex = 11;
@@ -206,7 +194,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
-            this.ClientSize = new System.Drawing.Size(779, 543);
+            this.ClientSize = new System.Drawing.Size(1043, 674);
             this.Controls.Add(this.BtnLogout);
             this.Controls.Add(this.BtnSaleHistory);
             this.Controls.Add(this.BtnStockEntry);
@@ -215,13 +203,13 @@
             this.Controls.Add(this.BtnManageGenre);
             this.Controls.Add(this.BtnManageBook);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormAdminNew";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormAdminNew";
+            this.Text = "Admin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAdminNew_FormClosing);
             this.Load += new System.EventHandler(this.FormAdminNew_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -232,7 +220,6 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnLogout;
         private System.Windows.Forms.Button BtnSaleHistory;

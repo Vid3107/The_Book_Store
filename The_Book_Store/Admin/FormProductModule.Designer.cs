@@ -43,6 +43,8 @@
             this.comboBoxPublisher = new System.Windows.Forms.ComboBox();
             this.labelQty = new System.Windows.Forms.Label();
             this.textBoxQty = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxAuthor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBoxBookCode
@@ -87,7 +89,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(44, 156);
+            this.label3.Location = new System.Drawing.Point(44, 211);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 3;
@@ -98,7 +100,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(44, 210);
+            this.label4.Location = new System.Drawing.Point(44, 265);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 20);
             this.label4.TabIndex = 3;
@@ -109,7 +111,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(44, 262);
+            this.label5.Location = new System.Drawing.Point(44, 317);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 20);
             this.label5.TabIndex = 3;
@@ -119,18 +121,18 @@
             // textBoxPrice
             // 
             this.textBoxPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPrice.Location = new System.Drawing.Point(163, 256);
+            this.textBoxPrice.Location = new System.Drawing.Point(163, 311);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(521, 26);
-            this.textBoxPrice.TabIndex = 4;
+            this.textBoxPrice.TabIndex = 5;
             // 
             // BtnSave
             // 
             this.BtnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSave.Location = new System.Drawing.Point(143, 378);
+            this.BtnSave.Location = new System.Drawing.Point(144, 437);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(126, 45);
-            this.BtnSave.TabIndex = 5;
+            this.BtnSave.TabIndex = 7;
             this.BtnSave.Text = "Save";
             this.BtnSave.UseVisualStyleBackColor = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
@@ -138,10 +140,10 @@
             // BtnUpdate
             // 
             this.BtnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnUpdate.Location = new System.Drawing.Point(302, 378);
+            this.BtnUpdate.Location = new System.Drawing.Point(303, 437);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(126, 45);
-            this.BtnUpdate.TabIndex = 6;
+            this.BtnUpdate.TabIndex = 8;
             this.BtnUpdate.Text = "Update";
             this.BtnUpdate.UseVisualStyleBackColor = true;
             this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
@@ -149,10 +151,10 @@
             // BtnCancel
             // 
             this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancel.Location = new System.Drawing.Point(459, 378);
+            this.BtnCancel.Location = new System.Drawing.Point(460, 437);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(126, 45);
-            this.BtnCancel.TabIndex = 7;
+            this.BtnCancel.TabIndex = 9;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
@@ -162,26 +164,26 @@
             this.comboBoxGenre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxGenre.FormattingEnabled = true;
-            this.comboBoxGenre.Location = new System.Drawing.Point(163, 202);
+            this.comboBoxGenre.Location = new System.Drawing.Point(163, 257);
             this.comboBoxGenre.Name = "comboBoxGenre";
             this.comboBoxGenre.Size = new System.Drawing.Size(521, 28);
-            this.comboBoxGenre.TabIndex = 3;
+            this.comboBoxGenre.TabIndex = 4;
             // 
             // comboBoxPublisher
             // 
             this.comboBoxPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPublisher.FormattingEnabled = true;
-            this.comboBoxPublisher.Location = new System.Drawing.Point(163, 153);
+            this.comboBoxPublisher.Location = new System.Drawing.Point(163, 208);
             this.comboBoxPublisher.Name = "comboBoxPublisher";
             this.comboBoxPublisher.Size = new System.Drawing.Size(521, 28);
-            this.comboBoxPublisher.TabIndex = 2;
+            this.comboBoxPublisher.TabIndex = 3;
             // 
             // labelQty
             // 
             this.labelQty.AutoSize = true;
             this.labelQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQty.Location = new System.Drawing.Point(44, 313);
+            this.labelQty.Location = new System.Drawing.Point(44, 368);
             this.labelQty.Name = "labelQty";
             this.labelQty.Size = new System.Drawing.Size(33, 20);
             this.labelQty.TabIndex = 3;
@@ -191,16 +193,36 @@
             // textBoxQty
             // 
             this.textBoxQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQty.Location = new System.Drawing.Point(163, 307);
+            this.textBoxQty.Location = new System.Drawing.Point(163, 362);
             this.textBoxQty.Name = "textBoxQty";
             this.textBoxQty.Size = new System.Drawing.Size(521, 26);
-            this.textBoxQty.TabIndex = 4;
+            this.textBoxQty.TabIndex = 6;
+            this.textBoxQty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxQty_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(44, 158);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 20);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Author";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxAuthor
+            // 
+            this.textBoxAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAuthor.Location = new System.Drawing.Point(163, 152);
+            this.textBoxAuthor.Name = "textBoxAuthor";
+            this.textBoxAuthor.Size = new System.Drawing.Size(521, 26);
+            this.textBoxAuthor.TabIndex = 2;
             // 
             // FormProductModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(729, 482);
+            this.ClientSize = new System.Drawing.Size(729, 518);
             this.Controls.Add(this.comboBoxPublisher);
             this.Controls.Add(this.comboBoxGenre);
             this.Controls.Add(this.BtnCancel);
@@ -212,12 +234,14 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBoxAuthor);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxTitle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxBookCode);
             this.Controls.Add(this.label1);
             this.Name = "FormProductModule";
-            this.Text = "FormProductModule";
+            this.Text = "New/Update Book";
             this.Load += new System.EventHandler(this.FormProductModule_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -240,5 +264,7 @@
         public System.Windows.Forms.ComboBox comboBoxPublisher;
         private System.Windows.Forms.Label labelQty;
         public System.Windows.Forms.TextBox textBoxQty;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox textBoxAuthor;
     }
 }

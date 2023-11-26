@@ -132,12 +132,16 @@ namespace The_Book_Store.Admin
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
-            dataGridViewStockIn.Rows.Clear();
-            cn.Open();
-            cm = new SqlCommand("DELETE FROM tblStockIn", cn);
-            cm.ExecuteNonQuery();
-            cn.Close();
-            CheckForChangesAndUpdateFlag();
+            if (MessageBox.Show("Are you sure you want to clear these records?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                dataGridViewStockIn.Rows.Clear();
+                cn.Open();
+                cm = new SqlCommand("DELETE FROM tblStockIn", cn);
+                cm.ExecuteNonQuery();
+                cn.Close();
+                CheckForChangesAndUpdateFlag();
+            }
+
         }
 
         private void FormStockIn_Load(object sender, EventArgs e)

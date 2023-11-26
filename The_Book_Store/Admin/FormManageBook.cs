@@ -36,12 +36,12 @@ namespace The_Book_Store.Admin
             int i = 0;
             dataGridViewManageBook.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT p.bookCode, p.bookTitle, b.publisher, c.genre, p.price, p.qty FROM tblBook AS p INNER JOIN tblPublisher AS b ON b.id = p.publisherID INNER JOIN tblGenre AS c ON c.id = p.genreID WHERE p.bookTitle LIKE '" + textBoxSearch.Text + "%'", cn);
+            cm = new SqlCommand("SELECT p.bookCode, p.bookTitle, p.bookAuthor, b.publisher, c.genre, p.price, p.qty FROM tblBook AS p INNER JOIN tblPublisher AS b ON b.id = p.publisherID INNER JOIN tblGenre AS c ON c.id = p.genreID WHERE p.bookTitle LIKE '" + textBoxSearch.Text + "%'", cn);
             sqlDataReader = cm.ExecuteReader();
             while(sqlDataReader.Read())
             {
                 i++;
-                dataGridViewManageBook.Rows.Add(i, sqlDataReader[0].ToString(), sqlDataReader[1].ToString(), sqlDataReader[2].ToString(), sqlDataReader[3].ToString(), sqlDataReader[4].ToString(), sqlDataReader[5].ToString());
+                dataGridViewManageBook.Rows.Add(i, sqlDataReader[0].ToString(), sqlDataReader[1].ToString(), sqlDataReader[2].ToString(), sqlDataReader[3].ToString(), sqlDataReader[4].ToString(), sqlDataReader[5].ToString(), sqlDataReader[6].ToString());
             }
             cn.Close();
             
@@ -62,11 +62,12 @@ namespace The_Book_Store.Admin
                 formProductModule.LoadPublisher();
                 formProductModule.textBoxBookCode.Text = dataGridViewManageBook.Rows[e.RowIndex].Cells[1].Value.ToString();
                 formProductModule.textBoxTitle.Text = dataGridViewManageBook.Rows[e.RowIndex].Cells[2].Value.ToString();
-                formProductModule.comboBoxPublisher.SelectedItem = dataGridViewManageBook.Rows[e.RowIndex].Cells[3].Value.ToString();
-                formProductModule.comboBoxGenre.SelectedItem = dataGridViewManageBook.Rows[e.RowIndex].Cells[4].Value.ToString();
+                formProductModule.textBoxAuthor.Text = dataGridViewManageBook.Rows[e.RowIndex].Cells[3].Value.ToString();
+                formProductModule.comboBoxPublisher.SelectedItem = dataGridViewManageBook.Rows[e.RowIndex].Cells[4].Value.ToString();
+                formProductModule.comboBoxGenre.SelectedItem = dataGridViewManageBook.Rows[e.RowIndex].Cells[5].Value.ToString();
              
-                formProductModule.textBoxPrice.Text = dataGridViewManageBook.Rows[e.RowIndex].Cells[5].Value.ToString();
-                formProductModule.textBoxQty.Text = dataGridViewManageBook.Rows[e.RowIndex].Cells[6].Value.ToString();
+                formProductModule.textBoxPrice.Text = dataGridViewManageBook.Rows[e.RowIndex].Cells[6].Value.ToString();
+                formProductModule.textBoxQty.Text = dataGridViewManageBook.Rows[e.RowIndex].Cells[7].Value.ToString();
                 formProductModule.ShowDialog();
             }
             else if (colName == "Delete")

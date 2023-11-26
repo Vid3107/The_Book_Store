@@ -60,12 +60,21 @@ namespace The_Book_Store.Admin
             {
                 if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    cn.Open();
-                    cm = new SqlCommand("DELETE FROM tblPublisher WHERE id LIKE '" + dataGridViewGenre[1, e.RowIndex].Value.ToString() + "'", cn);
-                    cm.ExecuteNonQuery();
-                    cn.Close();
-                    MessageBox.Show("Publisher has been successfully deleted!", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LoadRecords();
+                    try
+                    {
+                        cn.Open();
+                        cm = new SqlCommand("DELETE FROM tblGenre WHERE id LIKE '" + dataGridViewGenre[1, e.RowIndex].Value.ToString() + "'", cn);
+                        cm.ExecuteNonQuery();
+                        cn.Close();
+                        MessageBox.Show("Publisher has been successfully deleted!", "POS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadRecords();
+                    }
+                    catch(Exception ex)
+                    {
+                        cn.Close();
+                        MessageBox.Show(ex.Message);
+                    }
+
                 }
             }
         }

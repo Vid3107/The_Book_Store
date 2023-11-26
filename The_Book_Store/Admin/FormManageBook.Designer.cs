@@ -42,6 +42,7 @@
             this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPublisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,11 +59,11 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(386, 30);
+            this.label3.Location = new System.Drawing.Point(557, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 31);
+            this.label3.Size = new System.Drawing.Size(225, 37);
             this.label3.TabIndex = 8;
             this.label3.Text = "Manage Book";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -74,7 +75,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1007, 95);
+            this.panel1.Size = new System.Drawing.Size(1338, 95);
             this.panel1.TabIndex = 11;
             // 
             // textBoxSearch
@@ -102,7 +103,7 @@
             this.BtnNewBook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnNewBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNewBook.Image = ((System.Drawing.Image)(resources.GetObject("BtnNewBook.Image")));
-            this.BtnNewBook.Location = new System.Drawing.Point(829, 17);
+            this.BtnNewBook.Location = new System.Drawing.Point(1160, 17);
             this.BtnNewBook.Name = "BtnNewBook";
             this.BtnNewBook.Padding = new System.Windows.Forms.Padding(10);
             this.BtnNewBook.Size = new System.Drawing.Size(166, 45);
@@ -120,7 +121,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 95);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1007, 79);
+            this.panel2.Size = new System.Drawing.Size(1338, 79);
             this.panel2.TabIndex = 15;
             // 
             // panel3
@@ -129,7 +130,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 174);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1007, 451);
+            this.panel3.Size = new System.Drawing.Size(1338, 598);
             this.panel3.TabIndex = 16;
             // 
             // dataGridViewManageBook
@@ -139,7 +140,7 @@
             this.dataGridViewManageBook.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -151,6 +152,7 @@
             this.ColumnNumber,
             this.ColumnID,
             this.Column1,
+            this.Column5,
             this.ColumnPublisher,
             this.Column2,
             this.Column3,
@@ -171,8 +173,9 @@
             this.dataGridViewManageBook.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewManageBook.Name = "dataGridViewManageBook";
             this.dataGridViewManageBook.ReadOnly = true;
+            this.dataGridViewManageBook.RowTemplate.Height = 30;
             this.dataGridViewManageBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewManageBook.Size = new System.Drawing.Size(1007, 451);
+            this.dataGridViewManageBook.Size = new System.Drawing.Size(1338, 598);
             this.dataGridViewManageBook.TabIndex = 5;
             this.dataGridViewManageBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewManageBook_CellContentClick);
             // 
@@ -188,7 +191,7 @@
             this.ColumnID.HeaderText = "BCODE";
             this.ColumnID.Name = "ColumnID";
             this.ColumnID.ReadOnly = true;
-            this.ColumnID.Width = 77;
+            this.ColumnID.Width = 94;
             // 
             // Column1
             // 
@@ -197,13 +200,20 @@
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.HeaderText = "AUTHOR";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
             // ColumnPublisher
             // 
             this.ColumnPublisher.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ColumnPublisher.HeaderText = "PUBLISHER";
             this.ColumnPublisher.Name = "ColumnPublisher";
             this.ColumnPublisher.ReadOnly = true;
-            this.ColumnPublisher.Width = 106;
+            this.ColumnPublisher.Width = 134;
             // 
             // Column2
             // 
@@ -211,7 +221,7 @@
             this.Column2.HeaderText = "GENRE";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 78;
+            this.Column2.Width = 95;
             // 
             // Column3
             // 
@@ -219,7 +229,7 @@
             this.Column3.HeaderText = "PRICE";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 70;
+            this.Column3.Width = 86;
             // 
             // Column4
             // 
@@ -227,7 +237,7 @@
             this.Column4.HeaderText = "QUANTITY";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 99;
+            this.Column4.Width = 120;
             // 
             // Edit
             // 
@@ -251,13 +261,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 625);
+            this.ClientSize = new System.Drawing.Size(1338, 772);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormManageBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormManageBook";
+            this.Text = "Manage Book";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -281,6 +291,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPublisher;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

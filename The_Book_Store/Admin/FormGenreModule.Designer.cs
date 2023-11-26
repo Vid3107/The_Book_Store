@@ -39,7 +39,7 @@
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(208, 38);
+            this.labelID.Location = new System.Drawing.Point(187, 20);
             this.labelID.Name = "labelID";
             this.labelID.Size = new System.Drawing.Size(0, 13);
             this.labelID.TabIndex = 22;
@@ -48,20 +48,21 @@
             // BtnCancel
             // 
             this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancel.Location = new System.Drawing.Point(399, 183);
+            this.BtnCancel.Location = new System.Drawing.Point(378, 165);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(126, 45);
-            this.BtnCancel.TabIndex = 19;
+            this.BtnCancel.TabIndex = 3;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // BtnUpdate
             // 
             this.BtnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnUpdate.Location = new System.Drawing.Point(246, 183);
+            this.BtnUpdate.Location = new System.Drawing.Point(225, 165);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(126, 45);
-            this.BtnUpdate.TabIndex = 20;
+            this.BtnUpdate.TabIndex = 2;
             this.BtnUpdate.Text = "Update";
             this.BtnUpdate.UseVisualStyleBackColor = true;
             this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
@@ -69,10 +70,10 @@
             // BtnSave
             // 
             this.BtnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSave.Location = new System.Drawing.Point(93, 183);
+            this.BtnSave.Location = new System.Drawing.Point(72, 165);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(126, 45);
-            this.BtnSave.TabIndex = 21;
+            this.BtnSave.TabIndex = 1;
             this.BtnSave.Text = "Save";
             this.BtnSave.UseVisualStyleBackColor = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
@@ -80,16 +81,16 @@
             // textBoxGenre
             // 
             this.textBoxGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGenre.Location = new System.Drawing.Point(169, 84);
+            this.textBoxGenre.Location = new System.Drawing.Point(125, 72);
             this.textBoxGenre.Name = "textBoxGenre";
             this.textBoxGenre.Size = new System.Drawing.Size(408, 26);
-            this.textBoxGenre.TabIndex = 18;
+            this.textBoxGenre.TabIndex = 0;
             // 
             // labelGenre
             // 
             this.labelGenre.AutoSize = true;
             this.labelGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGenre.Location = new System.Drawing.Point(50, 90);
+            this.labelGenre.Location = new System.Drawing.Point(29, 72);
             this.labelGenre.Name = "labelGenre";
             this.labelGenre.Size = new System.Drawing.Size(54, 20);
             this.labelGenre.TabIndex = 17;
@@ -100,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 328);
+            this.ClientSize = new System.Drawing.Size(585, 270);
             this.Controls.Add(this.labelID);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnUpdate);
@@ -110,7 +111,7 @@
             this.MaximizeBox = false;
             this.Name = "FormGenreModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormGenreModule";
+            this.Text = "New/Update Genre";
             this.Load += new System.EventHandler(this.FormGenreModule_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

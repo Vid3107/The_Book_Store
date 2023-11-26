@@ -94,7 +94,7 @@
             this.MaximizeBox = false;
             this.Name = "FormInputQtyForBrowseProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FormInputQtyForBrowseProduct";
+            this.Text = "Input QTY";
             this.Load += new System.EventHandler(this.FormInputQtyForBrowseProduct_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

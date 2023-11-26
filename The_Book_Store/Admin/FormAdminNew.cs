@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Book_Storee.Forms.Auth;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using The_Book_Store.Auth;
 
 namespace The_Book_Store.Admin
 {
@@ -17,25 +19,11 @@ namespace The_Book_Store.Admin
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnection dbcon = new DBConnection();
+        private bool canClose = false;
         public FormAdminNew()
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.MyConnection());
-            cn.Open();
-            using (cn = new SqlConnection(dbcon.MyConnection()))
-            {
-                try
-                {
-                    cn.Open();
-                    MessageBox.Show("Connected");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                
-            }
-            
         }
 
         private void BtnBooks_Click(object sender, EventArgs e)
@@ -100,14 +88,24 @@ namespace The_Book_Store.Admin
 
         private void BtnLogout_Click(object sender, EventArgs e)
         {
+            canClose = true;
             this.Dispose();
-            FormSecurity formSecurity = new FormSecurity();
-            formSecurity.Show();
+            FormLogin2 formLogin2 = new FormLogin2();
+            formLogin2.Show();
         }
 
         private void FormAdminNew_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormAdminNew_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!canClose && e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+                MessageBox.Show("Please use the logout button to exit.", "Logout Reminder", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

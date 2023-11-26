@@ -24,7 +24,7 @@ namespace The_Book_Store.Admin
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.MyConnection());
-            this.formStockIn = formStockIn; 
+            this.formStockIn = formStockIn;
         }
 
         public void LoadProduct()

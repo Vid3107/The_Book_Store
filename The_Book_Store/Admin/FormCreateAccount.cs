@@ -34,7 +34,7 @@ namespace The_Book_Store.Admin
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
-            Clear();
+            this.Close();
         }
 
         private void BtnSave_Click(object sender, EventArgs e)

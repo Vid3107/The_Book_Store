@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBrowseProduct));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,7 +56,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(998, 87);
+            this.panel1.Size = new System.Drawing.Size(1086, 87);
             this.panel1.TabIndex = 7;
             // 
             // label3
@@ -64,7 +65,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(389, 30);
+            this.label3.Location = new System.Drawing.Point(433, 30);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(220, 31);
             this.label3.TabIndex = 1;
@@ -78,7 +79,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 87);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(998, 79);
+            this.panel2.Size = new System.Drawing.Size(1086, 79);
             this.panel2.TabIndex = 16;
             // 
             // label1
@@ -108,7 +109,7 @@
             this.dataGridViewBrowseProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -137,8 +138,17 @@
             this.dataGridViewBrowseProduct.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewBrowseProduct.Name = "dataGridViewBrowseProduct";
             this.dataGridViewBrowseProduct.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBrowseProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewBrowseProduct.RowTemplate.Height = 30;
             this.dataGridViewBrowseProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewBrowseProduct.Size = new System.Drawing.Size(998, 462);
+            this.dataGridViewBrowseProduct.Size = new System.Drawing.Size(1086, 504);
             this.dataGridViewBrowseProduct.TabIndex = 17;
             this.dataGridViewBrowseProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBrowseProduct_CellContentClick);
             // 
@@ -154,7 +164,7 @@
             this.ColumnID.HeaderText = "BCODE";
             this.ColumnID.Name = "ColumnID";
             this.ColumnID.ReadOnly = true;
-            this.ColumnID.Width = 77;
+            this.ColumnID.Width = 94;
             // 
             // Column1
             // 
@@ -169,7 +179,7 @@
             this.Column3.HeaderText = "PRICE";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 70;
+            this.Column3.Width = 86;
             // 
             // Column4
             // 
@@ -177,7 +187,7 @@
             this.Column4.HeaderText = "QUANTITY";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 99;
+            this.Column4.Width = 120;
             // 
             // Add
             // 
@@ -192,12 +202,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(998, 628);
+            this.ClientSize = new System.Drawing.Size(1086, 670);
             this.Controls.Add(this.dataGridViewBrowseProduct);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormBrowseProduct";
-            this.Text = "FormBrowseProduct";
+            this.Text = "Browse Product";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

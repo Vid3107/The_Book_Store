@@ -63,7 +63,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\DBConnection.cs" />
+    <Compile Include="Auth\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormCashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormCashier.Designer.cs">
+      <DependentUpon>FormCashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\FormLogin2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\FormLogin2.Designer.cs">
+      <DependentUpon>FormLogin2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier\FormQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier\FormQty.Designer.cs">
+      <DependentUpon>FormQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier\FormSearchProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier\FormSearchProduct.Designer.cs">
+      <DependentUpon>FormSearchProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier\formSettle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier\formSettle.Designer.cs">
+      <DependentUpon>formSettle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier\Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier\Popup.designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier\Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier\Search.designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnection.cs" />
     <Compile Include="Admin\FormActivateDeactivate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,12 +135,6 @@
     </Compile>
     <Compile Include="Admin\FormBrowseProduct.Designer.cs">
       <DependentUpon>FormBrowseProduct.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\FormCashier.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\FormCashier.designer.cs">
-      <DependentUpon>FormCashier.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\FormChangePassword.cs">
       <SubType>Form</SubType>
@@ -172,17 +214,12 @@
     <Compile Include="Admin\FormUserSettings.Designer.cs">
       <DependentUpon>FormUserSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\PasswordChange.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormSecurity.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSecurity.designer.cs">
-      <DependentUpon>FormSecurity.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\FormStockIn.cs">
       <SubType>Form</SubType>
@@ -203,9 +240,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormBrowseProduct.resx">
       <DependentUpon>FormBrowseProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\FormCashier.resx">
-      <DependentUpon>FormCashier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormChangePassword.resx">
       <DependentUpon>FormChangePassword.cs</DependentUpon>
@@ -246,11 +280,32 @@
     <EmbeddedResource Include="Admin\FormUserSettings.resx">
       <DependentUpon>FormUserSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSecurity.resx">
-      <DependentUpon>FormSecurity.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormStockIn.resx">
       <DependentUpon>FormStockIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormCashier.resx">
+      <DependentUpon>FormCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\FormLogin2.resx">
+      <DependentUpon>FormLogin2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier\FormQty.resx">
+      <DependentUpon>FormQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier\FormSearchProduct.resx">
+      <DependentUpon>FormSearchProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier\formSettle.resx">
+      <DependentUpon>formSettle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier\Popup.resx">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier\Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -277,7 +332,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\Icons\" />
-    <Folder Include="Cashier\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

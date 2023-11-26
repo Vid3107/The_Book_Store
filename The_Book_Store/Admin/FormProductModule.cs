@@ -62,6 +62,7 @@ namespace The_Book_Store.Admin
         {
             textBoxBookCode.Clear();
             textBoxTitle.Clear();
+            textBoxAuthor.Clear();
             comboBoxGenre.Items.Clear();
             comboBoxPublisher.Items.Clear();
             textBoxPrice.Clear();
@@ -98,9 +99,10 @@ namespace The_Book_Store.Admin
                     cn.Close();
 
                     cn.Open();
-                    cm = new SqlCommand("INSERT INTO tblBook(bookCode, bookTitle, publisherID, genreID, price, qty) VALUES (@bookCode, @bookTitle, @publisherID, @genreID, @price, @qty)", cn);
+                    cm = new SqlCommand("INSERT INTO tblBook(bookCode, bookTitle, bookAuthor, publisherID, genreID, price, qty) VALUES (@bookCode, @bookTitle, @bookAuthor, @publisherID, @genreID, @price, @qty)", cn);
                     cm.Parameters.AddWithValue("@bookCode", textBoxBookCode.Text);
                     cm.Parameters.AddWithValue("@bookTitle", textBoxTitle.Text);
+                    cm.Parameters.AddWithValue("@bookAuthor", textBoxAuthor.Text);
                     cm.Parameters.AddWithValue("@publisherID", publisherId);
                     cm.Parameters.AddWithValue("@genreID", genreId); 
                     cm.Parameters.AddWithValue("@price", textBoxPrice.Text);
@@ -160,9 +162,10 @@ namespace The_Book_Store.Admin
                     cn.Close();
 
                     cn.Open();
-                    cm = new SqlCommand("UPDATE tblBook SET bookTitle = @bookTitle, publisherID=@publisherID, genreID=@genreID, price=@price WHERE bookCode LIKE @bookCode", cn);
+                    cm = new SqlCommand("UPDATE tblBook SET bookTitle = @bookTitle, bookAuthor = @bookAuthor, publisherID=@publisherID, genreID=@genreID, price=@price, qty=@qty WHERE bookCode LIKE @bookCode", cn);
                     cm.Parameters.AddWithValue("@bookCode", textBoxBookCode.Text);
                     cm.Parameters.AddWithValue("@bookTitle", textBoxTitle.Text);
+                    cm.Parameters.AddWithValue("@bookAuthor", textBoxAuthor.Text);
                     cm.Parameters.AddWithValue("@publisherID", publisherId);
                     cm.Parameters.AddWithValue("@genreID", genreId);
                     cm.Parameters.AddWithValue("@price", textBoxPrice.Text);
@@ -185,6 +188,14 @@ namespace The_Book_Store.Admin
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void textBoxQty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char) Keys.Enter)
+            {
+                BtnSave.PerformClick();
+            }
         }
     }
 }

@@ -117,20 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        rgAAAK4B+ff3XQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFsSURBVEhLxZXN
-        KgZRHIeHFXvZ+17iChRrrgIpG6XoLTZugRVxCbgAHwskxcqWWMpCSj4WxPPMazQ0zBkz8tRT58x7/r9/
-        c5pz3ugb+nEb7/A1R9dsYR8G0YMPeILTOJ6ja1x7j92YyxqeYVM8C6MZz3E1nuVwjMv1YSFW0NpcTnGx
-        PiyENdbm8icNBnAHr/EZn/CmoNZYa4ZZZsYM4Qvu4RzOltSMfTRzEKNDtGODk4poxF08cPKIUw7Ah8kr
-        L/igBGaaHZ/GCQcwjMmr9vqgBGaa/alBlfxPgxFMfxG/0W2WzAZ+TWXPgbewfDTwx5qDd6o6yWaaHW2i
-        t2erE8hq0IEzmGyD43ZMk25glrfruhMXXuEteg78A/naYAzT26GjmMYaa80wy8w2jGnBefRtshqEkDQw
-        wywzM6lii34kq0HoFgU3WKoPC2FNUIMNvMBJzPqTz9K1lxh/NXl04RF6n3tQQnStNZ2YIoreANtitGdS
-        GZHAAAAAAElFTkSuQmCC
-</value>
-  </data>
   <metadata name="ColumnNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -138,6 +124,9 @@
     <value>True</value>
   </metadata>
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="ColumnPublisher.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -152,30 +141,7 @@
   <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="ColumnEdit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="ColumnEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cAAAAHABznhikwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADWSURBVDhPzdHN
-        CgFRGMbx4wJY+kjilljbyEexsqJkYekibOQ+lLWUfK1cgCJcgv9zZiiaw2HlqV8zo95n3jPMD0lhgTVy
-        +uGbaHiHEcpYwSRQQ9ehhRg0vEUfe6hkDjPDBEOHHjLQcAOKSrSJSs0VeoMrSei82kSpQsMqtbmE16h8
-        HFZcBa7hLJ42dhUscT+zrvoGOnMHdTwSVVCA3q68rj1AO7gNElVQxAEbaBP7tcN4FaRRQt4+Pcer4F3+
-        sOAEndkn+v/HqNinME0ccfagbaeIgxhzAzQQQSsOVATBAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="ColumnDelete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="ColumnDelete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cAAAAHABznhikwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADaSURBVDhPvZO/
-        CoJQGMV9rorUoHfItGgJmqKaoynwFXLtD7QE1dYjBC3SoA0t7UFP4OkeLg1eFbwFDT84fN/xJ16uBiyn
-        BrN9g+lCkxi2WzW+fPhDLARuogx1SCjIWwCNLjCcS5jzOoJiwfoA7E6S5T6/I8gK/AVwuQLPFxDGEmbO
-        uFP6WUGzB5xDwPJkJsycMSv9YkF/CqzEZxBmbcFgBmyOEub/C5yxOLRAwlxaYHeA+wMItmk4407pZwWE
-        b5z4aVqjbE9Awc9XOVaGOkQGf0kGZVGGCHWv8gY5bbg0oovH2gAAAABJRU5ErkJggg==
-</value>
-  </data>
 </root>

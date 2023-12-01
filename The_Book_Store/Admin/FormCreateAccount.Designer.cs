@@ -138,6 +138,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(521, 26);
             this.textBoxName.TabIndex = 4;
+            this.textBoxName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxName_KeyPress);
             // 
             // textBoxPassword
             // 

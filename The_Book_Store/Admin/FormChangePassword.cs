@@ -36,7 +36,7 @@ namespace The_Book_Store.Admin
                 bool passwordChanged = passwordChanger.ChangePassword(username, oldPassword, newPassword);
                 if (passwordChanged)
                 {
-                    MessageBox.Show("Password changed successfully!");
+                    MessageBox.Show("Password changed successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
                 else
@@ -46,13 +46,21 @@ namespace The_Book_Store.Admin
             }
             else
             {
-                MessageBox.Show("New password and confirm password do not match.");
+                MessageBox.Show("New password and confirm password do not match.", "User Settings", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBoxConfirmPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                BtnSave.PerformClick();
+            }
         }
     }
 }

@@ -74,10 +74,12 @@ namespace The_Book_Store.Auth
                 else if(found && !isAccountActive)
                 {
                     MessageBox.Show("Your account is deactivated. Please contact an administrator.", "Account Deactivated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxPassword.Clear();
                 }
                 else
                 {
-                    MessageBox.Show("wrong credential!");
+                    MessageBox.Show("wrong credential!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBoxPassword.Clear();
                 }
                 dr.Close();
                 cn.Close();

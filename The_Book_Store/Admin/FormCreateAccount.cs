@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,32 +37,67 @@ namespace The_Book_Store.Admin
         {
             this.Close();
         }
-
+        private bool IsTextBoxValid(TextBox textBox)
+        {
+            return !string.IsNullOrWhiteSpace(textBox.Text);
+        }
+        private bool IsComboBoxValid(ComboBox comboBox)
+        {
+            return comboBox.SelectedItem != null;
+        }
+        private bool IsTextBoxKrpytonValid(KryptonTextBox kryptonTextBox)
+        {
+            return !string.IsNullOrWhiteSpace(kryptonTextBox.Text);
+        }
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            try
+            if(IsTextBoxValid(textBoxUsername) &&
+                IsTextBoxKrpytonValid(textBoxPassword) &&
+                IsTextBoxKrpytonValid(textBoxConfirmPassword) &&
+                IsComboBoxValid(comboBoxRole) &&
+                IsTextBoxValid(textBoxName))
             {
-                if (textBoxPassword.Text != textBoxConfirmPassword.Text)
+                try
                 {
-                    MessageBox.Show("Password not match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                   if (textBoxPassword.Text != textBoxConfirmPassword.Text)
+                   {
+                        MessageBox.Show("Password not match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    cn.Open();
+                    cm = new SqlCommand("insert into tblUser (username, password, role, name) values(@username, @password, @role, @name)", cn);
+                    cm.Parameters.AddWithValue("@username", textBoxUsername.Text);
+                    cm.Parameters.AddWithValue("@password", textBoxPassword.Text);
+                    cm.Parameters.AddWithValue("@role", comboBoxRole.Text);
+                    cm.Parameters.AddWithValue("@name", textBoxName.Text);
+                    cm.ExecuteNonQuery();
+                    cn.Close();
+                    MessageBox.Show("New account has been saved successfully!");
+                    Clear();
+                    
                 }
-                cn.Open();
-                cm = new SqlCommand("insert into tblUser (username, password, role, name) values(@username, @password, @role, @name)", cn);
-                cm.Parameters.AddWithValue("@username", textBoxUsername.Text);
-                cm.Parameters.AddWithValue("@password", textBoxPassword.Text);
-                cm.Parameters.AddWithValue("@role", comboBoxRole.Text);
-                cm.Parameters.AddWithValue("@name", textBoxName.Text);
-                cm.ExecuteNonQuery();
-                cn.Close();
-                MessageBox.Show("New account has been saved successfully!");
-                Clear();
+                catch (Exception ex)
+                {
+                    cn.Close();
+                    MessageBox.Show($"Username [{textBoxUsername.Text}] has already taken.", "Failed Create Account", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxPassword.Clear();
+                    textBoxConfirmPassword.Clear();
+                    textBoxUsername.Focus();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                cn.Close();
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("One or more fields are null or empty!", "Failed Create Account", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxUsername.Focus();
             }
+        }
+
+        private void textBoxName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+                if (e.KeyChar == (char)Keys.Enter)
+                {
+                    BtnSave.PerformClick();
+                }
         }
     }
 }

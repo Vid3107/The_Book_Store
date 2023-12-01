@@ -35,10 +35,10 @@ namespace The_Book_Store.Admin
         {
             this.Hide();
             FormManageBook formManageBook = new FormManageBook();
+
             formManageBook.FormClosed += (s, args) => this.Show();
             formManageBook.LoadRecords();
-            formManageBook.Show();
-            
+            formManageBook.ShowDialog();
         }
 
         private void BtnManageGenre_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace The_Book_Store.Admin
             this.Hide();
             FormGenreList formGenreList = new FormGenreList();
             formGenreList.FormClosed += (s, args) => this.Show();
-            formGenreList.Show();
+            formGenreList.ShowDialog();
         }
 
         private void BtnStockEntry_Click(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace The_Book_Store.Admin
             this.Hide();
             FormStockIn formStockIn = new FormStockIn();
             formStockIn.FormClosed += (s, args) => this.Show();
-            formStockIn.Show();
+            formStockIn.ShowDialog();
         }
 
         private void BtnSaleHistory_Click(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace The_Book_Store.Admin
             this.Hide();
             FormSaleHistory formSaleHistory = new FormSaleHistory();
             formSaleHistory.FormClosed += (s, args) => this.Show();
-            formSaleHistory.Show();
+            formSaleHistory.ShowDialog();
         }
 
         private void BtnManagePublisher_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace The_Book_Store.Admin
             this.Hide();
             FormManagePublisher formManagePublisher = new FormManagePublisher();
             formManagePublisher.FormClosed += (s, args) => this.Show();
-            formManagePublisher.Show();
+            formManagePublisher.ShowDialog();
         }
 
         private void BtnManageUser_Click(object sender, EventArgs e)
@@ -78,7 +78,7 @@ namespace The_Book_Store.Admin
             this.Hide();
             FormUserSettings formUserSettings = new FormUserSettings();
             formUserSettings.FormClosed += (s, args) => this.Show();
-            formUserSettings.Show();
+            formUserSettings.ShowDialog();
         }
 
         private void FormUserSettings_FormClosed(object sender, FormClosedEventArgs e)
@@ -91,12 +91,12 @@ namespace The_Book_Store.Admin
             canClose = true;
             this.Dispose();
             FormLogin2 formLogin2 = new FormLogin2();
-            formLogin2.Show();
+            formLogin2.ShowDialog();
         }
 
         private void FormAdminNew_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void FormAdminNew_FormClosing(object sender, FormClosingEventArgs e)
@@ -107,5 +107,6 @@ namespace The_Book_Store.Admin
                 MessageBox.Show("Please use the logout button to exit.", "Logout Reminder", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
     }
 }

@@ -85,6 +85,7 @@
             this.textBoxGenre.Name = "textBoxGenre";
             this.textBoxGenre.Size = new System.Drawing.Size(408, 26);
             this.textBoxGenre.TabIndex = 0;
+            this.textBoxGenre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxGenre_KeyPress);
             // 
             // labelGenre
             // 

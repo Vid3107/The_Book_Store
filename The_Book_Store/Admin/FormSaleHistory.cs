@@ -13,8 +13,8 @@ namespace The_Book_Store.Admin
 {
     public partial class FormSaleHistory : Form
     {
-        string connectionString = @"Data Source=ViD3107\SQLEXPRESS;Initial Catalog=POS_BOOK;Integrated Security=True";
-
+        //string connectionString = @"Data Source=ViD3107\SQLEXPRESS;Initial Catalog=POS_BOOK;Integrated Security=True";
+        DBConnection connectionString = new DBConnection();
         public FormSaleHistory()
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace The_Book_Store.Admin
         {
             decimal totalSales = 0;
             
-            using (SqlConnection  conn = new SqlConnection(connectionString))
+            using (SqlConnection  conn = new SqlConnection(connectionString.MyConnection()))
             {
                 string query;
                 SqlCommand command;
@@ -67,7 +67,7 @@ namespace The_Book_Store.Admin
         private List<string> GetCashiers()
         {
             List<string> cashiers = new List<string>();
-            using (SqlConnection  con = new SqlConnection(connectionString))
+            using (SqlConnection  con = new SqlConnection(connectionString.MyConnection()))
             {
                 string query = "SELECT DISTINCT cashierName FROM tblCart";
                 SqlCommand command = new SqlCommand(query, con);
@@ -113,7 +113,7 @@ namespace The_Book_Store.Admin
         {
             int i = 0;
             dataGridViewSaleHistory.Rows.Clear();
-            using (SqlConnection cn = new SqlConnection(connectionString))
+            using (SqlConnection cn = new SqlConnection(connectionString.MyConnection()))
             {
                 cn.Open();
                 string query;

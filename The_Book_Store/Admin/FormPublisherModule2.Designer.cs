@@ -85,6 +85,7 @@
             this.textBoxPublisher.Name = "textBoxPublisher";
             this.textBoxPublisher.Size = new System.Drawing.Size(408, 26);
             this.textBoxPublisher.TabIndex = 12;
+            this.textBoxPublisher.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPublisher_KeyPress);
             // 
             // labelPublisher
             // 

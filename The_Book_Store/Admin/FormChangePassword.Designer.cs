@@ -147,6 +147,7 @@
             this.textBoxConfirmPassword.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxConfirmPassword.TabIndex = 3;
             this.textBoxConfirmPassword.UseSystemPasswordChar = true;
+            this.textBoxConfirmPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxConfirmPassword_KeyPress);
             // 
             // BtnCancel
             // 

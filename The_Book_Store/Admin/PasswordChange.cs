@@ -9,10 +9,11 @@ namespace The_Book_Store.Admin
 {
     public class PasswordChange
     {
-        string connectionString = @"Data Source=ViD3107\SQLEXPRESS;Initial Catalog=POS_BOOK;Integrated Security=True";
+        //string connectionString = @"Data Source=ViD3107\SQLEXPRESS;Initial Catalog=POS_BOOK;Integrated Security=True";
+        DBConnection connectionString = new DBConnection();
         public bool ChangePassword(string username, string currentPassword, string newPassword)
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString.MyConnection()))
             {
                 connection.Open();
                 string query = "SELECT password FROM tblUser WHERE username = @Username";

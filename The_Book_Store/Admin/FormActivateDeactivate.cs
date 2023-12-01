@@ -13,8 +13,9 @@ namespace The_Book_Store.Admin
 {
     public partial class FormActivateDeactivate : Form
     {
-        string connectionString = @"Data Source=ViD3107\SQLEXPRESS;Initial Catalog=POS_BOOK;Integrated Security=True";
-
+        //string connectionString = @"Data Source=ViD3107\SQLEXPRESS;Initial Catalog=POS_BOOK;Integrated Security=True";
+        DBConnection connectionString = new DBConnection();
+        
         public FormActivateDeactivate()
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace The_Book_Store.Admin
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection conn = new SqlConnection(connectionString.MyConnection()))
                 {
                     conn.Open();
                     string updateQuery = "UPDATE tblUser SET isActive = @IsActive WHERE username = @Username";

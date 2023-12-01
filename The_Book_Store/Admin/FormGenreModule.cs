@@ -34,20 +34,32 @@ namespace The_Book_Store.Admin
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            if (textBoxGenre.Text != "")
+            if (!string.IsNullOrWhiteSpace(textBoxGenre.Text))
             {
                 try
                 {
-                    if (MessageBox.Show("Are you sure you want to save this genre?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    cn.Open();
+                    cm = new SqlCommand("SELECT COUNT(*) FROM tblGenre WHERE Genre = @genre", cn);
+                    cm.Parameters.AddWithValue("@genre", textBoxGenre.Text);
+                    int count = (int)cm.ExecuteScalar();
+                    cn.Close();
+                    if (count > 0)
                     {
-                        cn.Open();
-                        cm = new SqlCommand("INSERT INTO tblGenre(Genre) VALUES(@genre)", cn);
-                        cm.Parameters.AddWithValue("@genre", textBoxGenre.Text);
-                        cm.ExecuteNonQuery();
-                        MessageBox.Show("Genre has been saved successfully!");
-                        ClearTextBox();
-                        formGenreList.LoadRecords();
-                        cn.Close();
+                        MessageBox.Show("This genre already exists!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        if (MessageBox.Show("Are you sure you want to save this genre?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            cn.Open();
+                            cm = new SqlCommand("INSERT INTO tblGenre(Genre) VALUES(@genre)", cn);
+                            cm.Parameters.AddWithValue("@genre", textBoxGenre.Text);
+                            cm.ExecuteNonQuery();
+                            MessageBox.Show("Genre has been saved successfully!");
+                            ClearTextBox();
+                            formGenreList.LoadRecords();
+                            cn.Close();
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -55,28 +67,51 @@ namespace The_Book_Store.Admin
                     MessageBox.Show(ex.Message);
                 }
             }
+            else
+            {
+                MessageBox.Show("Genre name must be filled!", "Failed Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            try
+            if (!string.IsNullOrWhiteSpace(textBoxGenre.Text))
             {
-                if (MessageBox.Show("Are you sure you want to upate this publisher?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                try
                 {
                     cn.Open();
-                    cm = new SqlCommand("UPDATE tblGenre SET genre = @genre WHERE id LIKE '" + labelID.Text + "'", cn);
+                    cm = new SqlCommand("SELECT COUNT(*) FROM tblGenre WHERE Genre = @genre", cn);
                     cm.Parameters.AddWithValue("@genre", textBoxGenre.Text);
-                    cm.ExecuteNonQuery();
+                    int count = (int)cm.ExecuteScalar();
                     cn.Close();
-                    MessageBox.Show("Genre has been successfully updated!");
-                    ClearTextBox();
-                    formGenreList.LoadRecords();
-                    this.Dispose();
+                    if (count > 0)
+                    {
+                        MessageBox.Show("This genre already exists!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        if (MessageBox.Show("Are you sure you want to upate this publisher?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            cn.Open();
+                            cm = new SqlCommand("UPDATE tblGenre SET genre = @genre WHERE id LIKE '" + labelID.Text + "'", cn);
+                            cm.Parameters.AddWithValue("@genre", textBoxGenre.Text);
+                            cm.ExecuteNonQuery();
+                            cn.Close();
+                            MessageBox.Show("Genre has been successfully updated!");
+                            ClearTextBox();
+                            formGenreList.LoadRecords();
+                            this.Dispose();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Genre name must be filled!", "Failed Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -95,6 +130,21 @@ namespace The_Book_Store.Admin
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBoxGenre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if (isNew)
+                {
+                    BtnSave.PerformClick();
+                }
+                else
+                {
+                    BtnUpdate.PerformClick();
+                }
+            }
         }
     }
 }

@@ -23,13 +23,11 @@ namespace The_Book_Store.Admin
             cn = new SqlConnection(dbcon.MyConnection());
             LoadRecords();
         }
-
         private void BtnNewPublisher_Click(object sender, EventArgs e)
         {
             FormPublisherModule2 publisher = new FormPublisherModule2(this, true);
             publisher.ShowDialog();
         }
-
         public void LoadRecords()
         {
             int i = 0;
@@ -45,7 +43,6 @@ namespace The_Book_Store.Admin
             mySqlDataReader.Close();
             cn.Close();
         }
-
         private void dataGridViewPublisher_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dataGridViewPublisher.Columns[e.ColumnIndex].Name;
